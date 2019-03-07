@@ -1,0 +1,168 @@
+#headertext {
+    background-color: cadetblue;
+    width: 100%;
+    margin-top: 0px;
+    box-shadow: 0 2px darkgray;
+}
+#headertext h1, p {
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+#headertext h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-family: 'Overpass', sans-serif;
+}
+#headertext p {
+    padding-bottom: 20px;
+    font-family: 'Overpass', sans-serif;
+}
+#barname,
+#piename {
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    font-size: 1.75em;
+}
+.axis text {
+        font-family: 'Overpass', sans-serif;;
+        font-size: 10pt;
+}
+.axis .label {
+font-size: 10pt;
+font-family: 'Overpass', sans-serif;
+}
+
+.axis path, .axis line {
+fill: none;
+stroke: #000;
+shape-rendering: crispEdges;
+}
+
+.x.axis text {
+font-size: 10pt;
+}
+.svgBar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 5%;
+    vertical-align: middle;
+}
+.svgPie {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10%;
+    vertical-align: middle;
+}
+#barname,
+#piename {
+    margin-top: 30px;
+    text-decoration: underline;
+}
+#bartext {
+    background-color: cadetblue;
+    width:100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 0 2px darkgray;
+}
+#footertext {
+    background-color: cadetblue;
+    width:100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#footertext p {
+    color:black;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Overpass', sans-serif;
+}
+#bartext p {
+    color:black;
+    width: 80%;
+    margin: 0 auto;
+}
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    padding: 2px;
+    font: 16px sans-serif;
+    background-color: azure;
+    border: 0px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+#pietooltip {
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    padding: 2px;
+    font: 16px sans-serif;
+    background-color: azure;
+    border: 0px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+h3 {
+    text-align: center;
+}
+#addDataButton {
+    margin: 0 auto;
+}
+#xlabel {
+    font-size: 1.25em;
+}
+#ylabel {
+    font-size: 1.25em;
+    margin-left: 20px;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
+input {
+    margin: 0 auto;
+}
+/*-------------------
+/ Layout Containers /
+-------------------*/
+.container {
+	width: 80%;
+	margin: 0px auto;
+}
+.input-container {
+	width: 60%;
+	margin: 0px auto;
+}
+.main-container {
+	min-height: 100%;
+	display: block;
+	position: relative;
+}
+
+/*---------------
+/*Media Queries /
+--------------*/
+@media screen and (max-width: 991px) {
+/* large screen styles */
+
+}
+
+@media screen and (max-width: 767px) {
+/* medium screen styles */
+
+}
+
+@media screen and (max-width: 479px) {
+/* phone styles */
+
+}

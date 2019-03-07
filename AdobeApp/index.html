@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Angular Application</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+        <!--Link to googleapi font -->
+        <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    </head>
+    <body class="main-container">
+        <div id="headertext">
+            <div class="container">
+                <h1>Welcome to my AngularJS Application</h1>
+                <p>This is the first application I have made using AngularJS and D3.js. This application will break down the time spent on this project into subject categories and display them visually with a Pie chart and a Stacked Bar chart. These elements are interactive (hover over data to get a value) and responsive to different screen sizes. It was brought up during our interview how important time-keeping is to this internship, so I decided to track my time throughout this project and use the data gathered from it to display my visualizations.</p>
+            </div>
+        </div>
+        
+        <script src='js/myAngularApp.js'></script>
+        <script src='js/mainCtrl.js'></script>
+        <script src="js/CsvCtrl.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js'></script>
+        <div id="barname">Time Spent</div>
+        <!-- Insert bar chart here --->
+        <script type="text/javascript" src="/bar.js"></script>
+        
+        <div id="bartext" class="container">
+            <p>This bar chart gives us a time breakdown per day of what I was doing as well as how long I was working on it. But what was the total composition of the time spent on this project?</p>
+        </div>
+            <div id="piename">Time Proportions</div>
+            <p>Time when hovering over slices is also in minutes.</p>
+        <!-- Insert pie chart here --->
+        <script type="text/javascript" src="pie.js"></script>
+        <div ng-app="myAngularApp" ng-controller="mainCtrl" class="container" id="footertext">
+            <p>As you can see from the pie chart there is a relatively even split between the time spent on this project and the subject I was working on. This is because more time had to be dedicated towards AngularJS/D3 initially to learn the framework/library before actually getting started on the application itself.</p>
+<!--
+            <h3>Add to the pie</h3>
+            <ul>
+                <li ng-repeat="item in items">{{item}}  <span ng-repeat="value in values">{{value}}<span ng-click="removeItem($index)">&times;</span></li>
+            </ul>
+            <div id="inputData"><input ng-model="addDesc"> : <input ng-model="addValue">
+            <button ng-click="addItem()">Add</button>
+            </div>
+            <p>{{errortext}}</p>
+        </div>
+-->
+        <div ng-app="myAngularApp" ng-controller="CsvCtrl" class="container"></div>
+    </body>
+    <footer>
+    </footer>
+</html>
